@@ -1,0 +1,16 @@
+
+        *{
+            background-color: rgb(38, 18, 215);
+        }
+        .cls{
+            background-color: blue;
+        }
+        #a{
+            background-color: red;
+        }
+        p{
+            text-align: center;
+        }
+        div,p{
+            background-color: green;
+        }

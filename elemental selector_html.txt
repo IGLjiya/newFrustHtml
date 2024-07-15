@@ -1,0 +1,39 @@
+elemental selector
+id selector
+class selector
+group selector
+universal selector
+
+
+-------
+external css
+
+<link>
+
+
+--------
+<span> and <div>
+
+
+---------
+
+
+.css-
+dispay:flex;
+
+
+
+---------
+table
+.table,th,td{
+	border:1px solid;
+	border-collapse:collapse
+}
+
+
+rowspan
+colspan
+
+
+--------
+tr:nth-child(odd/even){}
