@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: auto;
+            display: inline-block;
+            background-color: aqua;
+            padding: 20px 20px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        textarea {
+            /* box-sizing: border-box;
+            outline: none; */
+            resize: none;
+            
+        }
+
+        label {
+            width: 50px;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        button {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>HTML FORM</h1>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="1" value="" required placeholder="Enter Your Name"><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" value="gender" id="2"><label for="male">Male</label>
+            <input type="radio" id="3" value="gender"><label for="female">Female</label><br>
+            <label for="age">Age</label>
+            <input type="number" id="age" value="age" required min="10" max="30" step="1" placeholder="....Age"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="" required placeholder="Enter Your Email"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" value="" required placeholder="Enter Your Password"><br>
+            <label for="photo">Photo:</label>
+            <input type="file" name="photo" id="photo" required> <br>
+            <label for="place">Place :</label>
+            <select name="place" id="4" required>
+                <option value="calicut">Calicut</option>
+                <option value="malappuram">Malappuram</option>
+                <option value="kannur">Kannur</option>
+            </select>
+            <br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="5" rows="2 " cols="30" required placeholder="Enter Your Address"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

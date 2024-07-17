@@ -1,3 +1,6 @@
+15/07/24
+--------------------------------------------------
+
 elemental selector
 id selector
 class selector
@@ -37,3 +40,40 @@ colspan
 
 --------
 tr:nth-child(odd/even){}
+
+
+17/07/24
+----------------------------------------------------------------------
+
+FORM___
+
+
+placeholder=""
+
+type="file/password/text/"
+
+readonly
+
+required 
+
+min="" max="" setp=""
+
+------------------------------
+<video><source>
+audio
+
+
+
+<iframe>
+
+<marquee direction="left/right/up/down">
+
+
+
+CSS
+-------------
+backgroud-image:url()
+backgroud-repeat:no-reept;
+	size: 100% 100vh;
+	attachment:fixed;
+	position:center;
