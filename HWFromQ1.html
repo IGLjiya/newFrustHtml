@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1 {
+            background-color: orange;
+            color: rgb(245, 204, 102);
+            width: 500px;
+            height: 70px;
+            text-align: left;
+            padding: 10px 10px 10px 20px;
+
+        }
+
+        .c2 {
+            background-color: rgba(25, 21, 47, 0.894);
+            color: yellow;
+            width: 500px;
+            padding: 10px 10px 10px 20px;
+            text-align: center;
+
+        }
+        .c3{
+            background-color: orange;
+            content: right;
+            width: 500px;
+            height: 70px;
+            padding: 10px 10px 10px 20px;
+        }
+        label{
+            width: 50px;
+            /* display: inline-block; */
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="c1">
+            <h2>Sign Up</h2>
+        </div>
+        <div class="c2">
+            <br>
+            <form action="">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" required placeholder="Enter Frist Name"><br><br>
+                <label for="lnamw">Last Name</label>
+                <input type="text" name="lname" id="lname" required placeholder="Enter Last Name"><br><br>
+                <label for="dob">Date of Brith</label>
+                <input type="number" name="dob" id="date" placeholder="Date" required>
+                <input type="number" name="dob" id="month" placeholder="Month" required>
+                <input type="number" name="dob" id="year" placeholder="Year" required size="5"><br><br>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female"><label for="female">Female</label><br><br>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="">Country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uae">UAE</option>
+                    <option value="china">China</option>
+                </select>
+                <br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter E-mail" required><br><br>
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Phone" required><br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required><br><br>
+                <label for="conpassword">Confirm Password</label>
+                <input type="password" name="conpassword" id="conpassword" required><br><br>
+                <p><input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">I Agree to the Terms of use</label></p><br>
+
+
+
+            </form>
+        </div>
+        <div class="c3"><br>
+             <button type="submit" name="submit" id="submit">Submit</button>
+             <button type="reset" name="cancel" id="cancel">Cancel</button><br>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

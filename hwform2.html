@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+            display: flex;
+            justify-content:    center;
+            margin-top: 50px;
+            width: 100vh;
+        }
+
+        .FriColumn,.SecColumn{
+            background-color: rgb(45, 44, 44);
+            color: yellow;
+            font-size: 17px;
+            padding-top: 10px;
+        }
+        .row1{
+            display: flex;
+        }
+        .FriColumn{
+            text-align: right;
+        }
+        .SecColumn{
+            padding-left: 10px;
+            
+        }
+        .btn{
+            background-color: orange;
+            display: flex;
+           justify-content: flex-end;
+           padding: 10px 10px 10px 10px;
+           width: 340px;
+        }
+        .btn button{
+            color: white;
+            padding: 5px 5px 5px 5px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn button:hover{
+            background-color: #45a049;
+            
+        }
+        .btn .submit button{
+            background-color: green;
+           
+        }
+        .btn .cancel button{
+            background-color: red;
+            
+            margin-left: 5px;
+        }
+
+        .title{
+            background-color: orange;
+            color: yellow;
+            padding: 10px 10px 10px 10px;
+            width: 340px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="title">
+                <h2>Sign Up</h2>
+            </div>
+        <div class="row1">
+            
+            <div class="FriColumn">
+                <label for="fname">First Name</label><br><br>
+                <label for="lnamw">Last Name</label><br><br>
+                <label for="dob">Date of Brith</label><br><br>
+                <label for="gender">Gender</label><br><br>
+                <label for="country">Country</label><br><br>
+                <label for="email">Email</label><br><br>
+                <label for="phone">Phone</label><br><br>
+                <label for="password">Password</label><br><br>
+                <label for="conpassword">Confirm Password</label><br><br>
+            </div>
+            <div class="SecColumn">
+                <input type="text" name="fname" id="fname" required placeholder="Enter Frist Name"><br><br>
+                <input type="text" name="lname" id="lname" required placeholder="Enter Last Name"><br><br>
+                <select name="dob" id="day">
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select name="dob" id="day">
+                <select name="dob" id="month">
+                    <option value="">Month</option>
+                    <option value="jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="mar">Mar</option>
+                    <option value="apr">Apr</option>
+                    <option value="may">May</option>
+                    <option value="jun">Jun</option>
+                    <option value="jul">Jul</option>
+                    <option value="aug">Aug</option>
+                </select>
+                <select name="dob" id="year">
+                    <option value="">Year</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                </select>
+                <br><br>
+                <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female"><label for="female">Female</label><br><br>
+                <select name="country" id="country">
+                    <option value="">Country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uae">UAE</option>
+                    <option value="china">China</option>
+                </select>
+                <br><br>
+                <input type="email" name="email" id="email" placeholder="Enter E-mail" required><br><br>
+                <input type="text" name="phone" id="phone" placeholder="Enter Phone" required><br><br>
+                <input type="password" name="password" id="password" required><br><br>
+                <input type="password" name="conpassword" id="conpassword" required><br><br>
+                <p><input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I Agree to the Terms of use</label></p><br>
+            </div>
+             
+        </div>
+        <div class="btn">
+            <div class="submit"><button type="submit">Submit</button></div>
+            <div class="cancel"><button type="reset">Cancel</button></div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

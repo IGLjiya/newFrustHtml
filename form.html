@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgb(103, 96, 96);
+            width: 100%;
+        }
+
+        form .row {
+            display: flex;
+        }
+
+        .container .title {
+            font-size: 20px;
+            background: orange;
+            color: rgb(255, 255, 0);
+            padding: 10px 0 10px 10px;
+
+        }
+
+        .container .column {
+            background: #1f242d;
+            color: rgb(255, 255, 0);
+            justify-content: center;
+        }
+
+        .column .input-box {
+            margin: 15px 0;
+        }
+
+        .input-box input {
+            width: 50%;
+            padding: 5px 5px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            margin: center;
+        }
+
+        /* .input-box span{
+            display: block;
+
+        } */
+        .column .dob input {
+            display: block;
+            width: 80px;
+            padding: 10px 10px 0 0;
+        }
+
+        .row .btn {
+            background: orange;
+            padding: 20px 20px 20px 20px;
+            width: 100%;
+            display: flex;
+        }
+
+        .btn button {
+            color: white;
+            background: rgb(86, 244, 86);
+            width: 70px;
+            height: 55px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="">
+            <span>
+                <div class="title">
+                    <h2>Sign Up</h2>
+                </div>
+            </span>
+            <div class="row">
+                <div class="column">
+                    <div class="input-box">
+                        <span>Frist Name</span>
+                        <input type="text" name="fname" id="fname" placeholder="Enter First Name">
+                    </div>
+                    <div class="input-box">
+                        <span>Last Name</span>
+                        <input type="text" name="lname" id="lname" placeholder="Enter Last Name">
+                    </div>
+                    <div class="dob">
+                        <!-- <div class="input-box"> -->
+                        <span>Date of Brith</span>
+                        <input type="number" name="day" id="dob" placeholder="Day">
+                        <input type="number" name="month" id="dob" placeholder="Month">
+                        <input type="number" name="year" id="dob" placeholder="Year">
+                        <!-- </div> -->
+                    </div>
+                    <div class="gender">
+                        <span>Gender</span>
+                        <input type="radio" name="gender" id="Male">Male
+                        <input type="radio" name="gender" id="female">Female
+                    </div>
+                    <div class="input-box">
+                        <span>Country</span>
+                        <select name="country" id="country">
+                            <option value="">Country</option>
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="uae">UAE</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span>Email</span>
+                        <input type="email" name="email" id="email" placeholder="Enter E-mail">
+                    </div>
+                    <div class="input-box">
+                        <span>Phone</span>
+                        <input type="text" name="phone" id="phone" placeholder="Enter Phone">
+                    </div>
+                    <div class="input-box">
+                        <span>Password</span>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="input-box">
+                        <span>Confirm Password</span>
+                        <input type="password" name="conpassword" id="conpassword">
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <label for="terms">I Agree to the Terms of Use</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
