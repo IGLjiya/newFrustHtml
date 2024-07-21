@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+            border: 1px solid black;
+            width: 490px;
+            margin: auto;
+            display: grid;
+            justify-content: center;
+            margin-top: 50px;
+
+        }
+        .title{
+            background-color: yellow;
+            padding: 10px 10px 10px 10px;
+            width: 465px;
+            text-align: center;
+            margin: 2px 2px 2px 2px;
+
+        }
+        .title h1{
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+        .flex{
+            display: flex;
+        }
+        .column1,.column2{
+            background: rgb(32, 135, 238);
+            padding: 5px 0 5px 10px;
+            margin: 2px 2px 2px 2px;
+            padding-right: 30px;
+               
+        }
+        .column1{
+            width: 150px;
+
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+        .column2{
+            width: 250px;
+        }
+        .btn{
+            background-color: rgb(32, 135, 238);
+            margin: 3px 2px 2px 2px;
+            padding: 10px 10px 10px 10px;
+            width: 465px;
+            display: flex;
+            justify-content: center;
+
+        }
+        .btn button{
+            padding: 10px;
+            border: none;
+            margin: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn button:hover{
+            background-color: aqua ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Registration Form</h1>
+        </div>
+        <form action="">
+        <div class="flex">
+            <div class="column1">
+                <label for="name">Enter Name</label>
+            </div>
+            <div class="column2">
+                <input type="text" name="name" id="name" required>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="column1">
+                <label for="password">Enter Password</label>
+            </div>
+            <div class="column2">
+                <input type="password" name="password" id="password" required>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="column1">
+                <label for="address">Enter Address</label>
+            </div>
+            <div class="column2">
+                <textarea name="address" id="address"></textarea>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="column1">
+                <label for="game">Select Game</label>
+            </div>
+            <div class="column2">
+                <input type="checkbox" name="game" id="game">Hockey <br>
+                <input type="checkbox" name="game" id="game">Football <br>
+                <input type="checkbox" name="game" id="game">Badminton <br>
+                <input type="checkbox" name="game" id="game">Criket <br>
+                <input type="checkbox" name="game" id="game">Volleyball
+            </div>
+        </div>
+        <div class="flex">
+            <div class="column1">
+                <label for="Gender">Gender</label>
+            </div>
+            <div class="column2">
+                <input type="radio" name="gender" >Male
+                <input type="radio" name="gender">Female
+            </div>
+        </div>
+        <div class="flex">
+            <div class="column1">
+                <label for="age">Select your Age</label>
+            </div>
+            <div class="column2">
+                <select name="age" id="age">
+                    <option value="">Select</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="column1">
+                <label for="photo">Select Photo</label>
+            </div>
+            <div class="column2">
+                <input type="file" name="file" id="file" required>
+            </div>
+        </div>
+        <div class="btn">
+            <button>Click Me</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit Form</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
