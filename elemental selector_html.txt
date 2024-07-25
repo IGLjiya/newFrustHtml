@@ -35,18 +35,6 @@ table
 
 
 
------------------------------------
-22-07-24
---------------------------------
-
-Gradiants
----------------------
-background-image: linaer-gradian( to bottom right red, green, yellow)
-		: radial-gradiant('')
-		:conic-gradiant('')
-
-
-		:repeating-linear-gradiant(----,---10%,--20%)
 
 rowspan
 colspan
@@ -91,3 +79,122 @@ backgroud-repeat:no-reept;
 	size: 100% 100vh;
 	attachment:fixed;
 	position:center;
+
+
+
+-----------------------------------
+22-07-24
+--------------------------------
+
+Gradiants
+---------------------
+background-image: linaer-gradian( to bottom right red, green, yellow)
+		: radial-gradiant('')
+		:conic-gradiant('')
+
+
+		:repeating-linear-gradiant(----,---10%,--20%)
+
+---------------
+
+css Grid property
+----------------
+display:grid;
+grid-template-column:100px 200px 300px;(responsive unit "auto"/"fr(fraction)")
+grid-template-rows:;
+
+grid-area:;(name grid)
+grid-template-areas:"(name of grid)" "()" "()" ;
+
+
+-------------------------------
+css transform;
+---------------
+
+transform:translate(x,y)//position
+	: rotate(90deg);
+	:scale(widht,height);   //size increase
+	:skew(10deg, 20deg);    //slop content
+
+
+---------------
+css tansition
+-------------
+
+transition : transform 3s, width 2s;
+transition-timing-function: ease-in/out;/linear(both slow), defualt(ease)
+transition-delay:1s;
+
+
+EAKVF
+
+------------------------------------------------------------------------------
+24/07/2024
+-----------------------------------
+
+Animation
+--------------
+keywords --@keyframes 'name'{
+	0%{
+		left: 0px;
+		top: 0px;
+	{
+	50%{
+		left:150px;
+		top: 25px;
+	}
+	100%{
+		left:600px;
+		right:60px;
+	}
+
+---animation-name: 'name';
+---animation-dura:2s;
+---animation-delay:2s;
+---animation-iteration-count:2;/'infinte'
+---animation-direction:reverse;
+animation-timing-function:ease-in/eae-out,.....;
+
+
+
+animation:
+
+
+flex-property
+------------
+flex-wrap: wrap; //
+flex-direction:row-reverse;
+
+flex-direction:column;  //column wise wrap
+
+
+flex-flow:wrap-reverse;
+
+justify-content:space-around/space-between;
+
+aling-itms:center/end/start;
+gap:10px
+column-gap:;
+row-gap:;
+
+-------------------------------------
+media Query
+----------------
+@meadia screen and(max-width:600px){}            
+
+
+type:
+-all
+-screen
+-print
+-speech
+
+
+meadia (max-width:''){
+	.cls{
+	}
+	@madia (min-width:'')and (max-width:''){
+			.cls{
+			}
+		}
+}

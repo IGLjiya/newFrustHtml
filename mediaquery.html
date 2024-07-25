@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cls{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            font-size: 40px;
+        }
+        /* @media screen and (max-width:400px) {
+            .cls{
+                background-color: green;
+
+            }
+            h1{
+                color: white;
+                font-size: 20px;
+            }
+        } */
+
+        @media (max-width:1000px) {
+            .cls{
+                background-color: red;
+            }
+            @media (min-width:400px) and (max-width:800px) {
+                .cls{
+                    background-color: green;
+                }
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cls">
+        <h1>welcome to HTML</h1>
+    </div>
+</body>
+</html>
