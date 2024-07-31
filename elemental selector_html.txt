@@ -211,3 +211,56 @@ BOOTSTRAP
 
 ---------------
 
+<link>
+<script>
+
+
+
+29/07/24
+---------------
+
+modal  //popup window
+
+
+-------------
+Breakpoints
+
+class='col-5/col-md-5 col-lg-4 col-xl-3'
+
+
+
+Alert box
+pagination
+offcanvas
+progress bar
+tooltips
+dropdownlist
+z-index
+
+
+HW-  http://cakesstudio.in/
+
+
+sudhishma.futuralabs@gmail.com
+
+----------------------------------------------------------------------
+31-07-24
+------------------------------
+JAVA SCRIPT
+
+document.write("");
+console.log("")
+
+variable declaration
+-----------------------
+var--(global scope)
+let---(block scope)
+const---(constant variable/block scope)
+
+
+---------------
+document.getElementByTd("").innerHTML=var;
+document.getElementByClassName("")[index].innerHTML=c
+
+
+3 div color button  color change

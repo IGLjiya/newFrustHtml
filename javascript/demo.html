@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="cls">heading</h1>
+
+    <h2 class="cls1"></h2>
+    <h3 class="cls1"></h3>
+    <p class="cls1"></p>
+    <script>
+        let a=10,b=20,c;
+        c=a+b;
+        document.getElementById("cls").innerHTML=c;
+        // document.getElementsByClassName("cls1")[0].innerHTML=c
+        let nodes=document.getElementsByClassName("cls1")
+    //    console.log(nodes);
+
+        for(let i=0;i<nodes.length;i++){
+            nodes[i].innerHTML=c;
+        }
+    </script>
+</body>
+</html>
