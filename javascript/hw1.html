@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="row1" class="position-relative"
+            style="background-color: red; width: 500px; height: 200px; justify-items: center;">
+            <button onclick="changeColor1()" class="position-absolute top-50 start-50 translate-middle" type="button"
+                id="btn1" style="padding: 10px;">click</button>
+        </div>
+        <div id="row2" class="position-relative"
+            style="background-color: green; width: 500px; height: 200px; justify-items: center;">
+            <button onclick="changeColor2()" class="position-absolute top-50 start-50 translate-middle" type="button"
+                id="btn2" style="padding: 10px;">click</button>
+        </div>
+        <div id="row3" class="position-relative"
+            style="background-color: yellowgreen; width: 500px; height: 200px; justify-items: center;">
+            <button onclick="changeColor3()" class="position-absolute top-50 start-50 translate-middle" type="button"
+                id="btn3" style="padding: 10px;">click</button>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        function changeColor1() {
+            var row1 = document.getElementById("row1");
+            row1.style.backgroundColor = "blue"
+        }
+        function changeColor2() {
+            var row2 = document.getElementById("row2");
+            row2.style.backgroundColor = "aqua"
+        }
+        function changeColor3() {
+            var row3 = document.getElementById("row3")
+            row3.style.backgroundColor = "grey"
+        }
+
+    </script>
+</body>
+
+</html>

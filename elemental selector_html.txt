@@ -264,3 +264,34 @@ document.getElementByClassName("")[index].innerHTML=c
 
 
 3 div color button  color change
+
+
+---------------------------------------------------
+03/08/2024
+--------------------
+used to dynamic 
+
+
+variable---data storing container
+keyword----predefined word
+identifier-----user-defined
+
+
+'new' ---used to memory allocated 
+
+
+.charAt()
+charCodeAt()  //ASCII CODE 
+indexOf("")
+.slice([],[])  /-2 (end to start)
+.split("")
+
+
+?. email name hide ;-
+
+
+
+
+
+
+
