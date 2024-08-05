@@ -7,11 +7,25 @@
 </head>
 <body>
     <script>
-        var email='abcde@gmail.com';
-        let hide=email.split("@")[0].length-2;
-        var r = new RegExp(".{"+hide+"}@","g");
-        email=email.replace(r,"****@");
-        console.log(email);
+        // var email='abcmnnnde@gmail.com';
+        // let hide=email.split("@")[0].length-2;
+        // var r = new RegExp(".{"+hide+"}@","g");
+        // email=email.replace(r,"****@");
+        // console.log(email);
+
+
+         let email = 'althfrhmn@gmail.com';
+
+            let [localPart, domain] = email.split('@');
+            let firstPart = localPart.slice(0,3);
+            let endPart = localPart.slice(-1);
+
+            let hidenPart = '*'.repeat(localPart.length-2);
+
+            let hidenEmail=firstPart+hidenPart+endPart+'@'+domain;
+
+        console.log(hidenEmail);
+        
         
     </script>
 </body>
