@@ -290,8 +290,109 @@ indexOf("")
 ?. email name hide ;-
 
 
+-------------------------------------------------------------
+06/08/24
+------------------------------
+`${variablr} `---variable substitution
+
+=  [assingment]
+==  [equal]
+===   [strictly equal]
+
+-----------------
+LOOP
+-------------------
+for loop
+while loop  [entry controlled loop]
+do while loop [exit controlled loop]
 
 
 
+let array =[2,3,6,5,5]
+let array= new Array(10)
 
 
+array.push(6); //new value last add
+array.pop();   //last remove
+array.shift();	//first element remove in array
+array.unshift(0);	// first add element
+
+array.include(2)	//to chech whether is element
+array.indexOf()	/indexOf(2,3)	// to calcu index
+array.lastIndexOf()	//last index
+array.length()		//length of the elements
+array.splice()		//to add , to remove, to remove add , to add front of number
+
+
+splice(startIndex, deleteCount, addNumwhereStartIndex, )
+
+
+------------s-
+FUNCTION
+--------
+function funName(){
+	//statement
+	return value;
+}
+
+
+// calculator
+//amstrong ,palindrome
+//switch weeks
+
+
+--------------------------------------------------
+08/08/24
+---------------------
+conditional operator -- ("condition")?statement:stat;
+
+()?--:()?---:-----;	//if elseif statement
+
+
+--------
+DOM(Document object model)
+
+.innerText
+.innerHTML
+--------------
+QuerySelector
+------------
+
+document.querySelector("./#/*/demo")
+
+	.querySelectorAll()[]
+
+-----------------------------------
+EVENTS
+-----------
+onclick="function()"
+ondbclick="function()" 	//double click
+addEventListener("")
+
+addEventListener("mousemove" function(event){
+	statement
+})
+
+onsubmit="function"
+oninput=""
+
+-----------
+regular expression
+
+
+/^[a-zA-Z{4,10}$]/
+
+.test()
+
+
+facebook signUp page
+
+
+
+------------------
+window.onload = function (){
+	const year=document.getElemetnById("year")
+}
+
+
+=---------
